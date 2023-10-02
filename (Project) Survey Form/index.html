@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Gaming Genres Survey</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body class="bgimage">
+      <h1 id="title">Gaming Genres Survey</h1>
+      <p id="description">
+        What are the most played game genres by our comunity?
+      </p>
+      <form id="survey-form" action="">
+        <fieldset>
+          <label id="name-label"
+            >How should we call you?<input
+              id="name"
+              type="text"
+              required
+              placeholder="Name"
+          /></label>
+          <label id="email-label"
+            >What's your email?<input
+              id="email"
+              type="email"
+              required
+              placeholder="E-mail"
+          /></label>
+          <label id="number-label"
+            >What's your age?<input
+              id="number"
+              type="number"
+              min="13"
+              max="120"
+              required
+              placeholder="Age"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">
+            How many hours a day do you game?
+            <select id="dropdown" required>
+              <option value="">(select one)</option>
+              <option value="1">Less than an hour</option>
+              <option value="2">Less than two hours</option>
+              <option value="3">Two to four hours</option>
+              <option value="4">Four to six hours</option>
+              <option value="5">More than six hours</option>
+            </select></label
+          >
+          <p class="pform">What genre do you play the most?</p>
+          <div class="genres">
+            <label
+              ><input name="genre" value="Sandbox" type="radio" />Sandbox<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Real-time strategy (RTS)"
+                type="radio" />Real-time strategy (RTS)<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Shooters (FPS and TPS)"
+                type="radio" />Shooters (FPS and TPS)<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Multiplayer(MOBA and MMO)"
+                type="radio" />Multiplayer (MOBA and MMO)<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Role-playing (RPG and more)"
+                type="radio" />Role-playing (RPG and more)<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Simulation"
+                type="radio" />Simulation<br
+            /></label>
+            <label
+              ><input name="genre2" value="Sports" type="radio" />Sports<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Puzzlers and party games"
+                type="radio" />Puzzlers and party games<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Action-adventure"
+                type="radio" />Action-adventure<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Survival and horror"
+                type="radio" />Survival and horror<br
+            /></label>
+            <label
+              ><input
+                name="genre"
+                value="Platformer"
+                type="radio" />Platformer<br
+            /></label>
+            <label
+              ><input name="genre" value="Adult" type="radio" />Adult<br
+            /></label>
+          </div>
+          <p class="pform">What other genre do you also play a lot?</p>
+          <div class="genres">
+            <label
+              ><input name="genre2" value="Sandbox" type="radio" />Sandbox<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Real-time strategy (RTS)"
+                type="radio" />Real-time strategy (RTS)<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Shooters (FPS and TPS)"
+                type="radio" />Shooters (FPS and TPS)<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Multiplayer (MOBA and MMO)"
+                type="radio" />Multiplayer (MOBA and MMO)<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Role-playing (RPG and more)"
+                type="radio" />Role-playing (RPG and more)<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Simulation"
+                type="radio" />Simulation<br
+            /></label>
+            <label
+              ><input name="genre2" value="Sports" type="radio" />Sports<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Puzzlers and party games"
+                type="radio" />Puzzlers and party games<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Action-adventure"
+                type="radio" />Action-adventure<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Survival and horror"
+                type="radio" />Survival and horror<br
+            /></label>
+            <label
+              ><input
+                name="genre2"
+                value="Platformer"
+                type="radio" />Platformer<br
+            /></label>
+            <label
+              ><input name="genre2" value="Adult" type="radio" />Adult<br
+            /></label>
+          </div>
+          <label
+            >Explain us why computers are plain better than consoles.<textarea
+              id="comp>"
+              rows="4"
+              maxlength="420"
+              placeholder="You know they are ¯\_(ツ)_/¯"
+            ></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="gamer word">
+            <input id="gamer word" type="checkbox" value="I swear" required />
+            I swear that I am a gamer and that
+            <a
+              href="https://i.kym-cdn.com/photos/images/facebook/001/354/591/17c.png"
+              target="blank"
+              >gamers never lie on forms</a
+            ><br />
+          </label>
+          <label for="terms-and-conditions">
+            <input
+              class="checkmargin"
+              id="terms-and-conditions"
+              type="checkbox"
+              value="I accept"
+              required
+            />
+            I accept the
+            <a
+              href="https://www.freecodecamp.org/news/terms-of-service/"
+              target="blank"
+              >terms and conditions</a
+            ><br />
+          </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </body>
+  </div>
+</html>
